@@ -1,16 +1,17 @@
-import Image from "next/image";
-import Navbar from "./Navbar";
+
 import Banner from "./Banner";
-import Service from "./Service";
 import AboutUs from "./AboutUs";
-import { CanvasRevealEffectDemo } from "./TechStack";
+import Service from "./Service";
+import { ServiceSection } from "./ServiceSection";
+import { Testimonial } from "./Testimonial";
 
 export default function Home() {
   return (
     <div>
       <Banner/>
-      <CanvasRevealEffectDemo/>
-      <AboutUs/>
+      <ServiceSection/>
+      <Testimonial/>
+      {/* <AboutUs/> */}
     </div>
   );
 }
