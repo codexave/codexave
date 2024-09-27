@@ -5,13 +5,16 @@ import React from "react";
 
 export function Testimonial() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <>
+    <div className="text-center font-bold md:text-4xl text-2xl ">Our Testimonials</div>
+    <div className="h-[25rem] rounded-md flex flex-col antialiased   items-center justify-center relative overflow-hidden">
     <InfiniteMovingCards
       items={testimonials}
       direction="right"
-      speed="normal"
+      speed="slow"
     />
   </div>
+  </>
   )
 }
 

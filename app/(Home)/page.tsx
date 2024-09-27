@@ -1,9 +1,9 @@
 
 import Banner from "./Banner";
 import AboutUs from "./AboutUs";
-import Service from "./Service";
 import { ServiceSection } from "./ServiceSection";
 import { Testimonial } from "./Testimonial";
+import Faq from "./Faq";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <ServiceSection/>
       <Testimonial/>
       <AboutUs/>
+      <Faq/>
     </div>
   );
 }
