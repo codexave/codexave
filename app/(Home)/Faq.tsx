@@ -28,7 +28,7 @@ const faqs = [
 
   export default function Faq() {
   return (
-    <div id='faq' className="max-w-2xl mx-auto  py-24">
+    <div id='faq' className="max-w-2xl mx-auto  py-24 sm:scale-100 scale-90">
       <h2 className="text-2xl font-bold text-center md:text-4xl mb-4">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
