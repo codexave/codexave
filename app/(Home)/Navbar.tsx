@@ -8,13 +8,13 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { MenuIcon, XIcon } from "lucide-react"
 import { ModeToggle } from "@/components/ui/Toggle"
-import Image from "next/image"
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
-  { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  { name: "Projects", path: "#projects" },
+  { name: "About", path: "#about" },
+  { name: "Service", path: "#service" },
+  { name: "Frequently Asked Questions", path: "#faq" },
 ]
 
 export default function Navbar() {
