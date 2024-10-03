@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { MenuIcon, XIcon } from "lucide-react"
 import { ModeToggle } from "@/components/ui/Toggle"
+import Image from "next/image"
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -27,7 +28,8 @@ export default function Navbar() {
         <div className="flex items-center justify-evenly h-16">
           <div className="flex items-center gap-2">
             <Link href="/" className="text-2xl font-bold text-primary">
-              CodeXave
+            <Image className="dark:hidden block" src={'/LOGO BLACK.png'} width={80} height={80} alt="Logo" ></Image>
+            <Image className="dark:block hidden" src={'/LOGO WHITE.png'} width={80} height={80} alt="Logo"></Image>
             </Link>
           </div>
           <div className="hidden md:block">
@@ -39,8 +41,8 @@ export default function Navbar() {
                   className={cn(
                     "px-3 py-2 rounded-md text-sm font-medium transition-colors",
                     pathname === item.path
-                      ? "bg-primary/10 text-primary"
-                      : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                      ? " text-primary"
+                      : "text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-200 delay-200 hover:text-accent-foreground "
                   )}
                 >
                   {item.name}

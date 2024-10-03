@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Facebook, Github, Instagram, Linkedin, Mail, Twitter } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -10,7 +11,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold ">CodeXave</h3>
+          <Image className="dark:hidden block" src={'/LOGO BLACK.png'} width={110} height={110} alt="Logo" ></Image>
+          <Image className="dark:block hidden" src={'/LOGO WHITE.png'} width={110} height={110} alt="Logo"></Image>
             <p className="text-sm">
               Innovating the future, one line of code at a time. We're a passionate team of developers and designers creating cutting-edge solutions.
             </p>
@@ -18,11 +20,11 @@ function Footer() {
           <div>
             <h4 className="text-2xl font-semibold  mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover: transition-colors duration-300">Home</Link></li>
-              <li><Link href="#about" className="hover: transition-colors duration-300">About</Link></li>
-              <li><Link href="#projects" className="hover: transition-colors duration-300">Projects</Link></li>
-              <li><Link href="#service" className="hover: transition-colors duration-300">Services</Link></li>
-              <li><Link href="#faq" className="hover: transition-colors duration-300">FAQs</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-300 delay-300 hover:text-accent-foreground">Home</Link></li>
+              <li><Link href="#about" className="text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-300 delay-300 hover:text-accent-foreground">About</Link></li>
+              <li><Link href="#projects" className="text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-300 delay-300 hover:text-accent-foreground">Projects</Link></li>
+              <li><Link href="#service" className="text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-300 delay-300 hover:text-accent-foreground">Services</Link></li>
+              <li><Link href="#faq" className="text-muted-foreground hover:font-semibold hover:scale-105 transition ease-in duration-300 delay-300 hover:text-accent-foreground">FAQs</Link></li>
             </ul>
           </div>
           <div>
@@ -60,10 +62,6 @@ function Footer() {
             <a href="#" className="hover: transition-colors duration-300">
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
-            </a>
-            <a href="#" className="hover: transition-colors duration-300">
-              <Github className="h-6 w-6" />
-              <span className="sr-only">GitHub</span>
             </a>
           </div>
           <div className="text-sm text-center sm:text-left">
