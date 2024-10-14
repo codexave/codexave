@@ -2,9 +2,10 @@
 import { AuroraBackground } from '@/components/ui/aurora-background'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Banner() {
+
   return (
 
     <>
@@ -31,6 +32,7 @@ CodeXave is a bold tech startup, pushing boundaries with innovative digital solu
       <Link href={"mailto:codexave@gmail.com"} className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
         Contact now
       </Link>
+  
     </motion.div>
   </AuroraBackground>
   </div>

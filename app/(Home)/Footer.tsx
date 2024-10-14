@@ -47,10 +47,10 @@ function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex space-x-4 mb-4 sm:mb-0">
-            <a href="#" className="hover: transition-colors duration-300">
+            <Link href="https://www.facebook.com/share/pU1K8sovxyi6TJqo/" className="hover: transition-colors duration-300">
               <Facebook className="h-6 w-6" />
               <span className="sr-only">Facebook</span>
-            </a>
+            </Link>
             <a href="#" className="hover: transition-colors duration-300">
               <Twitter className="h-6 w-6" />
               <span className="sr-only">Twitter</span>
