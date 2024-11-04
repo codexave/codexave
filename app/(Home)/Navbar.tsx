@@ -25,11 +25,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-evenly h-16">
+        <div className="flex items-center justify-evenly h-20">
           <div className="flex items-center gap-2">
-            <Link href="/" className="text-2xl font-bold text-primary">
-            <Image className="dark:hidden block" src={'/LOGO BLACK.png'} width={80} height={80} alt="Logo" ></Image>
-            <Image className="dark:block hidden" src={'/LOGO WHITE.png'} width={80} height={80} alt="Logo"></Image>
+            <Link href="/" className="text-2xl font-bold text-primary ">
+            <Image className="dark:hidden block p-1" src={'/LOGO BLACK.png'} width={80} height={80} alt="Logo" ></Image>
+            <Image className="dark:block hidden p-1" src={'/LOGO WHITE.png'} width={80} height={80} alt="Logo"></Image>
             </Link>
           </div>
           <div className="hidden md:block">

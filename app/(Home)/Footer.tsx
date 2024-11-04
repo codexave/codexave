@@ -46,7 +46,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex space-x-4 mb-4 sm:mb-0">
+          {/* <div className="flex space-x-4 mb-4 sm:mb-0">
             <Link href="https://www.facebook.com/share/pU1K8sovxyi6TJqo/" className="hover: transition-colors duration-300">
               <Facebook className="h-6 w-6" />
               <span className="sr-only">Facebook</span>
@@ -63,7 +63,7 @@ function Footer() {
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
-          </div>
+          </div> */}
           <div className="text-sm text-center sm:text-left">
             <p>&copy; {new Date().getFullYear()} CodeXave. All rights reserved.</p>
             <p className="mt-2">
