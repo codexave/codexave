@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "website design",
     "mobile app development",
     "online marketing",
+    "codexave",
   ],
 };
 
