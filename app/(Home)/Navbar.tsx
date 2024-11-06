@@ -12,8 +12,8 @@ import Image from "next/image"
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Projects", path: "#projects" },
-  { name: "About", path: "#about" },
+  { name: "Projects", path: "#about" },
+  { name: "About", path: "#testimonial" },
   { name: "Service", path: "#service" },
   { name: "Frequently Asked Questions", path: "#faq" },
 ]
@@ -25,14 +25,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-evenly h-20">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
-            <Link href="/" className="text-2xl font-bold text-primary ">
-            <Image className="dark:hidden block p-1" src={'/LOGO BLACK.png'} width={80} height={80} alt="Logo" ></Image>
-            <Image className="dark:block hidden p-1" src={'/LOGO WHITE.png'} width={80} height={80} alt="Logo"></Image>
+            <Link href="/" className="text-2xl font-bold text-primary">
+              <Image className="dark:hidden block p-1" src={'/LOGO BLACK.png'} width={80} height={80} alt="Logo" />
+              <Image className="dark:block hidden p-1" src={'/LOGO WHITE.png'} width={80} height={80} alt="Logo" />
             </Link>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <Link
@@ -50,18 +50,17 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="flex items-center space-x-4">
+            <ModeToggle />
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
+              className="md:hidden"
             >
               {isOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </Button>
-          </div>
-          <div className="">
-            <ModeToggle/>
           </div>
         </div>
       </div>

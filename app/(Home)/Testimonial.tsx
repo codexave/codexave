@@ -6,7 +6,7 @@ import React from "react";
 export function Testimonial() {
   return (
     <>
-    <div className="text-center font-bold md:text-4xl text-2xl ">Our Testimonials</div>
+    <div id="testimonial" className="text-center font-bold md:text-4xl text-2xl ">Our Testimonials</div>
     <div className="h-[25rem] rounded-md flex flex-col antialiased   items-center justify-center relative overflow-hidden">
     <InfiniteMovingCards
       items={testimonials}
