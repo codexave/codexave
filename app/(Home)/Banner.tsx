@@ -29,9 +29,12 @@ function Banner() {
       <div className="font-extralight text-base text-center md:px-52 md:text-3xl dark:text-neutral-200 py-4">
 CodeXave is a bold tech startup, pushing boundaries with innovative digital solutions. Empowering businesses to level up with next-gen tools and software.
       </div>
-      <Link href={"mailto:codexave@gmail.com"} className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-        Contact now
-      </Link>
+      <Link 
+  target='_blank' href={"https://wa.me/923253452292?text=Hello%20CodeXave,%20I%20would%20like%20to%20know%20more%20about%20your%20services."} 
+  className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2"
+>
+  Contact now
+</Link>
   
     </motion.div>
   </AuroraBackground>

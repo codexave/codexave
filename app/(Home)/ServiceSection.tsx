@@ -5,9 +5,11 @@ import React from 'react'
 
 export function ServiceSection() {
   return (
-    <div id='service' className="max-w-screen-xl mx-auto px-8">
+    <div id='service' className='pt-10'>
+    <div  className="max-w-screen-xl mx-auto px-8">
         <div className='mt-10 text-center font-bold md:text-4xl text-2xl '>Our Services</div>
     <HoverEffect items={projects} />
+  </div>
   </div>
   )
 }

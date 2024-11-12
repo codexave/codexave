@@ -19,8 +19,9 @@ function Projects() {
           });
       }, [inView]);
   return (
+    <div id='project'>
     <div className='mx-auto max-w-screen-xl pt-20' ref={ref}>
-    <div id='projects' className='pt-2 font-extrabold text-4xl md:text-5xl text-center uppercase' data-aos="fade-up">Our Projects</div>
+    <div  className='pt-2 font-extrabold text-4xl md:text-5xl text-center uppercase' data-aos="fade-up">Our Projects</div>
 
 
     <Tabs data-aos="fade-down" defaultValue="seo" className="text-center p-8">
@@ -110,6 +111,7 @@ function Projects() {
         </TabsContent>
   </Tabs>
 
+</div>
 </div>
   )
 }

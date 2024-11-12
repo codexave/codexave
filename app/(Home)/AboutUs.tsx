@@ -28,9 +28,10 @@ export default function AboutUs() {
         }
       }
   return (
+    <div id="about">
     <LampContainer>
     <motion.h1
-    id="about"
+    
       initial={{ opacity: 0.5, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -44,5 +45,6 @@ export default function AboutUs() {
       <p className="md:w-[520px] text-sm text-center font-normal pt-3 text-zinc-800 dark:text-zinc-100 md:text-xl ">At CodeXave, we are dedicated to creating innovative tech solutions that help businesses succeed in the digital world. Our team specializes in developing custom software that is secure, scalable, and easy to use.</p>
     </motion.h1>
     </LampContainer>
+    </div>
   )
 }

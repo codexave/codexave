@@ -11,9 +11,9 @@ export default function Home() {
     <div>
       <Banner/>
       <ServiceSection/>
-      <Testimonial/>
-      <AboutUs/>
       <Projects/>
+      <AboutUs/>
+      <Testimonial/>
       <Faq/>
     </div>
   );
