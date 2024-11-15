@@ -82,6 +82,3 @@
 .footer {
   animation: fadeIn 1s ease forwards;
 }
-html {
-  scroll-behavior: smooth;
-}

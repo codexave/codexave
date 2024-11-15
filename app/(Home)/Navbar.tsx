@@ -28,8 +28,20 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
             <Link href="/" className="text-2xl font-bold text-primary">
-              <Image className="dark:hidden block p-1" src={'/LOGO BLACK.png'} width={80} height={80} alt="codexave" />
-              <Image className="dark:block hidden p-1" src={'/LOGO WHITE.png'} width={80} height={80} alt="seo" />
+            <Image
+          className="dark:hidden block p-1"
+          src={'/LOGO BLACK.png'}
+          width={80}
+          height={80}
+          alt="codexave"
+        />
+        <Image
+          className="dark:block hidden p-1"
+          src={'/LOGO WHITE.png'}
+          width={80}
+          height={80}
+          alt="seo"
+        />
             </Link>
           </div>
           <div className="hidden md:flex">

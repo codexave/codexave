@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "./(Home)/Navbar";
 import Footer from "./(Home)/Footer";
+import { Navbar2 } from "./(Home)/Navbar2";
 
 const inter = Rubik({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
         className={inter.className}
       >
